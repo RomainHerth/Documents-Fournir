@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pièces à fournir - Porsche Finance</title>
+  <style>
+    :root{--black:#0e0e12;--surface:#f2f2f2;--white:#fff;--muted:#6b6d70;--border:#d8d8db;--red:#d5001c;--radius:6px;--shadow:0 12px 30px rgba(0,0,0,.08)}
+    *{box-sizing:border-box} body{margin:0;background:var(--surface);color:var(--black);font-family:"Porsche Next","Arial Narrow",Arial,sans-serif;line-height:1.45}
+    .topbar{height:8px;background:var(--black)}
+    header{background:#fff;border-bottom:1px solid var(--border);padding:22px 4vw;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-size:13px;letter-spacing:.19em;text-transform:uppercase;font-weight:700}.subbrand{font-size:12px;color:var(--muted);margin-top:3px}
+    .status{font-size:13px;color:var(--muted)}
+    main{max-width:900px;margin:30px auto;padding:0 24px 60px;display:block}
+    .panel,.preview{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .panel{padding:30px 34px;margin-bottom:22px}.preview{padding:36px 40px;min-height:500px}
+    h1{font-size:30px;line-height:1.12;margin:0 0 8px;letter-spacing:-.02em}h2{font-size:20px;margin:28px 0 12px}h3{font-size:16px;margin:0 0 12px}
+    .lead{color:var(--muted);margin:0 0 24px}.field{margin:0 0 16px}.business-only{display:none}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}
+    select,input[type=text]{width:100%;border:1px solid #a7a8aa;border-radius:4px;background:#fff;padding:12px 13px;font:inherit}
+    select:focus,input:focus{outline:2px solid #2762ec;outline-offset:2px}.section-title{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);padding-top:18px;margin-top:18px}
+    .checklist{display:grid;gap:9px}.check{display:grid;grid-template-columns:20px 1fr;gap:9px;align-items:start;font-size:15px}.check input{margin-top:3px;accent-color:var(--black)}.check.alt{margin-left:28px}.doc-list li.alt{margin-left:38px;border-left:2px solid var(--border)}.doc-list li.alt .doc-row{grid-template-columns:24px 1fr;gap:18px;padding-left:20px}.doc-list li.alt .doc-label{padding-left:4px}
+    .req{color:var(--red);font-weight:700}.opt{color:var(--muted);font-size:12px}.actions{display:flex;gap:10px;margin-top:22px}.reset-actions{justify-content:center}.reset-actions .btn{min-width:180px}.print-actions{justify-content:center;margin-top:34px;padding-top:22px;border-top:1px solid var(--border)}.print-actions .btn{min-width:230px}.btn{border:1px solid var(--black);border-radius:4px;padding:12px 16px;font-weight:700;cursor:pointer;font:inherit}.primary{background:var(--black);color:#fff;flex:1}.secondary{background:#fff;color:var(--black)}
+    .print-head{border-bottom:2px solid var(--black);padding-bottom:20px;margin-bottom:26px}.print-kicker{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:700}.meta{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.meta-item{border:1px solid var(--border);padding:12px}.meta-label{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em}.meta-value{font-weight:700}
+    .doc-section{break-inside:avoid;margin:0 0 24px}.doc-section h2{font-size:17px;border-bottom:1px solid var(--border);padding-bottom:8px;margin:0 0 8px}.doc-list{list-style:none;padding:0;margin:0}.doc-list li{border-bottom:1px solid #ececef}.doc-row{display:grid;grid-template-columns:24px 1fr;gap:13px;align-items:start;padding:10px 8px}.doc-check{appearance:none;-webkit-appearance:none;width:20px;height:20px;margin:2px 0 0;border:2px solid var(--black);border-radius:2px;background:#fff;display:grid;place-content:center;cursor:pointer}.doc-check:checked{background:var(--black)}.doc-check:checked:after{content:"✓";color:#fff;font-size:14px;font-weight:700;line-height:1;transform:translateY(-1px)}.doc-label{min-width:0}.doc-list .mandatory .doc-label{font-weight:700}.doc-list .mandatory .doc-label:after{content:"Obligatoire";color:var(--red);font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-left:8px}.doc-list .alt .doc-label:after{content:"Alternative";color:#0068b4;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-left:8px}.empty{border:1px dashed #aaa;padding:24px;color:var(--muted);text-align:center}.note{margin-top:26px;padding:14px 16px;background:#f3f3f3;font-size:12px}.privacy{font-size:11px;color:var(--muted);margin-top:16px}
+    @media(max-width:900px){.panel,.preview{padding:24px 20px}}
+    @media print{body{background:#fff}.doc-check{-webkit-print-color-adjust:exact;print-color-adjust:exact}.doc-list li:not(.print-selected){display:none!important}.doc-section.print-empty{display:none!important}.topbar,header,.panel,.print-actions,.print-help{display:none!important}main{display:block;margin:0;padding:0}.preview{box-shadow:none;border:0;border-radius:0;padding:0;min-height:auto}.empty{display:none}@page{size:A4;margin:16mm}.doc-list li{font-size:11.5pt}.print-head{margin-bottom:18px}.note{background:#eee!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+  </style>
+</head>
+<body>
+<div class="topbar"></div>
+<header><div><div class="brand">Porsche Finance</div><div class="subbrand">Préparation du dossier de financement</div></div><div class="status">Outil local · aucune donnée transmise</div></header>
+<main>
+  <aside class="panel">
+    <h1>Préparer la liste des documents</h1><p class="lead">Renseignez la situation du client : la liste des documents à fournir est générée automatiquement.</p><h3>Situation du client</h3>
+    <div class="field"><label for="clientType">Type de client</label><select id="clientType"><option value="private">Particulier / PPNS à usage privé</option><option value="business">Société / PPNS à usage professionnel</option></select></div>
+    <div class="field private-only" id="dcc2Field"><label for="dcc2">Niveau de délégation</label><select id="dcc2"><option value="no">Dossier standard</option><option value="yes">DCC2 (PV : &gt; 100 000 € en LOA / Découvert &gt; 75 000 € en Crédit)</option></select></div>
+    <div class="field business-only" id="companyTypeField"><label for="companyType">Type de société / activité</label><select id="companyType"><option value="company">Société</option><option value="liberal">Profession libérale</option><option value="artisan">Artisan / Commerçant / Entreprise individuelle</option></select></div>
+    <div class="field"><label for="nationality" id="nationalityLabel">Situation administrative</label><select id="nationality"><option value="fr">Français / ressortissant UE</option><option value="foreign">Ressortissant étranger</option></select></div>
+    <div class="field private-only"><label for="income">Situation professionnelle</label><select id="income"><option value="employee">Salarié, ancienneté ≥ 6 mois</option><option value="newemployee">Salarié, ancienneté < 6 mois</option><option value="retirednew">Retraité depuis moins d'un an</option><option value="retired">Retraité depuis plus d'un an</option><option value="abroad">Travailleur à l'étranger</option><option value="other">Autre situation</option></select></div>
+    <div class="field private-only"><label for="housing">Situation de logement</label><select id="housing"><option value="tenant">Locataire</option><option value="ownerloan">Propriétaire avec crédit immobilier</option><option value="ownerfree">Propriétaire sans crédit immobilier</option><option value="hosted">Logé à titre gratuit</option></select></div>
+    <div class="field"><label for="contribution">Apport</label><select id="contribution"><option value="under">Inférieur à 10 000 €</option><option value="saving">≥ 10 000 € provenant d'une épargne</option><option value="tradein">≥ 10 000 € provenant d'une reprise</option></select></div>
+    <div class="actions reset-actions"><button class="btn secondary" id="resetBtn" type="button">Réinitialiser</button></div>
+    <div class="privacy">Le bouton ouvre la boîte d'impression du navigateur. Choisissez « Enregistrer au format PDF » pour créer un PDF.</div>
+  </aside>
+  <section class="preview" id="printArea">
+    <div class="print-head"><div class="print-kicker">Documents à fournir</div><h1>Dossier de Financement Porsche Finance</h1></div>
+    <div id="output"></div>
+    <div class="note"><strong>Important :</strong> des justificatifs complémentaires peuvent être demandés après analyse du dossier. Les documents doivent être lisibles, complets et en cours de validité lorsque cela est requis.</div>
+    <div class="actions print-actions"><button class="btn primary" id="printBtn" type="button" onclick="prepareAndPrint(); return false;">Imprimer / PDF</button></div><p class="privacy print-help">Si la fenêtre ne s’ouvre pas, utilisez Ctrl+P (Windows) ou Cmd+P (Mac).</p>
+  </section>
+</main>
+<script>
+const docs=[
+{id:'id',aud:'private',cat:'Identité',label:'CNI ou passeport en cours de validité',required:true,rule:s=>s.nationality==='fr'},
+{id:'permit',aud:'private',cat:'Identité',label:'Permis de conduire',required:true,rule:s=>s.nationality==='fr'},
+{id:'residence',aud:'both',cat:'Identité',label:'Titre de séjour accompagné d’une pièce d’identité du pays d’origine',required:true,rule:s=>s.nationality==='foreign'},
+{id:'address',aud:'private',cat:'Identité',label:'Justificatif de domicile de moins de 3 mois (téléphone, eau, gaz, électricité, taxe foncière, FAI, acte notarié…)',required:true},
+{id:'rib',aud:'private',cat:'Identité',label:'RIB',required:true},
+{id:'tax',aud:'private',cat:'Revenus',label:'Dernier avis d’imposition complet (4 pages)',required:true},
+{id:'payslips',aud:'private',cat:'Revenus',label:'3 dernières fiches de paie',required:true,rule:s=>['employee','newemployee'].includes(s.income)},
+{id:'contract',aud:'private',cat:'Revenus',label:'Contrat de travail',required:true,rule:s=>s.income==='newemployee'},
+{id:'pension',aud:'private',cat:'Revenus',label:'Avis de pensions',required:true,rule:s=>s.income==='retirednew'},
+{id:'abroad',aud:'private',cat:'Revenus',label:'Travailleur à l’étranger : se rapprocher de votre conseiller',required:true,rule:s=>s.income==='abroad'},
+{id:'propertyIncome',aud:'private',cat:'Revenus',label:'Justificatifs de revenus fonciers',required:false},
+{id:'otherIncome',aud:'private',cat:'Revenus',label:'Justificatifs de tous autres revenus complémentaires',required:false},
+{id:'rentReceipt',aud:'private',cat:'Charges immobilières',label:'Dernière quittance de loyer émise par le bailleur',required:true,rule:s=>s.housing==='tenant'&&s.dcc2==='yes'},
+{id:'landlord',aud:'private',cat:'Charges immobilières',label:'Attestation du bailleur avec nom du locataire, adresse, coordonnées du bailleur et montant du loyer',required:false,alternative:true,rule:s=>s.housing==='tenant'&&s.dcc2==='yes'},
+{id:'rentBank',aud:'private',cat:'Charges immobilières',label:'Dernier relevé de compte faisant apparaître le prélèvement du loyer',required:false,alternative:true,rule:s=>s.housing==='tenant'&&s.dcc2==='yes'},
+{id:'propertyTax',aud:'private',cat:'Charges immobilières',label:'Dernière taxe foncière, toutes les pages',required:true,rule:s=>s.housing==='ownerfree'},
+{id:'loanSchedule',aud:'private',cat:'Charges immobilières',label:'Extrait d’échéancier du prêt immobilier',required:true,rule:s=>s.housing==='ownerloan'&&s.dcc2==='yes'},
+{id:'loanBankCertificate',aud:'private',cat:'Charges immobilières',label:'Attestation bancaire indiquant le montant de l’échéance',required:false,alternative:true,rule:s=>s.housing==='ownerloan'&&s.dcc2==='yes'},
+{id:'loanBankStatement',aud:'private',cat:'Charges immobilières',label:'Dernier relevé de compte faisant apparaître le prélèvement de l’échéance',required:false,alternative:true,rule:s=>s.housing==='ownerloan'&&s.dcc2==='yes'},
+{id:'hosting',aud:'private',cat:'Hébergement à titre gratuit',label:'Attestation d’hébergement manuscrite',required:true,rule:s=>s.housing==='hosted'},
+{id:'hostId',aud:'private',cat:'Hébergement à titre gratuit',label:'Justificatif d’identité de l’hébergeur',required:true,rule:s=>s.housing==='hosted'},
+{id:'hostAddress',aud:'private',cat:'Hébergement à titre gratuit',label:'Justificatif de domicile de l’hébergeur',required:true,rule:s=>s.housing==='hosted'},
+{id:'hostCouple',aud:'private',cat:'Hébergement à titre gratuit',label:'Si le client est en couple avec l’hébergeur : justificatif de charges locatives ou immobilières',required:true,rule:s=>s.housing==='hosted'},
+{id:'directorId',aud:'business',cat:'Identité',label:'CNI ou passeport en cours de validité du dirigeant',required:true,rule:s=>s.nationality==='fr'},
+{id:'kbis',aud:'business',cat:'Identité',label:'K-BIS de moins de 3 mois',required:true,rule:s=>s.companyType==='company'},
+{id:'insee',aud:'business',cat:'Identité',label:'Fiche de situation INSEE',required:true,rule:s=>s.companyType==='liberal'},
+{id:'rcs',aud:'business',cat:'Identité',label:'Inscription au RCS',required:true,rule:s=>s.companyType==='artisan'},
+{id:'beProof',aud:'business',cat:'Identité',label:'Justificatifs des bénéficiaires effectifs',required:true,rule:s=>s.companyType==='company'},
+{id:'cerfaBE',aud:'business',cat:'Identité',label:'CERFA 16062*02 de déclaration des bénéficiaires effectifs auprès du Tribunal de commerce',required:false,alternative:true,rule:s=>s.companyType==='company'},
+{id:'bePorsche',aud:'business',cat:'Identité',label:'Attestation des bénéficiaires effectifs Porsche Finance',required:false,alternative:true,rule:s=>s.companyType==='company'},
+{id:'beTaxPack',aud:'business',cat:'Identité',label:'Liasse fiscale complète avec annexes',required:false,alternative:true,rule:s=>s.companyType==='company'},
+{id:'businessRib',aud:'business',cat:'Identité',label:'RIB professionnel',required:true},
+{id:'companyTaxPack',aud:'business',cat:'Justificatifs de revenus',label:'Dernière liasse fiscale complète avec coordonnées comptables et chiffres N-1',required:true,rule:s=>s.companyType==='company'},
+{id:'bncBicTax',aud:'business',cat:'Justificatifs de revenus',label:'Avis d’imposition sur lequel figurent les BNC/BIC',required:true,rule:s=>['liberal','artisan'].includes(s.companyType)},
+{id:'professionalTaxReturn',aud:'business',cat:'Justificatifs de revenus',label:'Déclaration fiscale des revenus professionnels (CERFA 2035, 2042 ou 2031)',required:true,rule:s=>['liberal','artisan'].includes(s.companyType)},
+{id:'businessOtherIncome',aud:'business',cat:'Justificatifs de revenus',label:'Tous autres justificatifs de revenus complémentaires',required:false},
+{id:'savingTransfer',aud:'both',cat:'Apport ≥ 10 000 €',label:'Avis de virement du client',required:false,rule:s=>s.contribution==='saving'},
+{id:'savingProof',aud:'both',cat:'Apport ≥ 10 000 €',label:'Document Porsche Finance « JUSTIFICATIF D’APPORT »',required:false,alternative:true,rule:s=>s.contribution==='saving'},
+{id:'tradeOrder',aud:'both',cat:'Apport ≥ 10 000 €',label:'Bon de commande du véhicule repris',required:false,rule:s=>s.contribution==='tradein'},
+{id:'tradeProof',aud:'both',cat:'Apport ≥ 10 000 €',label:'Document Porsche Finance « JUSTIFICATIF D’APPORT »',required:false,alternative:true,rule:s=>s.contribution==='tradein'},
+{id:'statements',aud:'private',cat:'Autres',label:'3 derniers mois de relevés de comptes bancaires',required:false},
+{id:'debt',aud:'private',cat:'Autres',label:'Attestation d’endettement complétée et signée par le client',required:false},
+{id:'assets',aud:'both',cat:'Autres',label:'Fiche patrimoniale / justificatifs d’épargne',required:false},
+{id:'guarantee',aud:'business',cat:'Autres',label:'Pour les cautions : justificatifs à préciser par la Direction Back Office',required:false}
+];
+const state={selected:new Set()};
+const $=id=>document.getElementById(id);
+function situation(){return {clientType:$('clientType').value,dcc2:$('dcc2').value,companyType:$('companyType').value,nationality:$('nationality').value,income:$('income').value,housing:$('housing').value,contribution:$('contribution').value}}
+function relevant(d,s){const audience=d.aud==='both'||d.aud===s.clientType;return audience&&(!d.rule||d.rule(s))}
+function updateFields(){const business=$('clientType').value==='business';document.querySelectorAll('.business-only').forEach(el=>el.style.display=business?'block':'none');document.querySelectorAll('.private-only').forEach(el=>el.style.display=business?'none':'block');$('nationalityLabel').textContent=business?'Situation administrative du dirigeant':'Situation administrative'}
+function applyRules(){updateFields();const s=situation();docs.forEach(d=>{if(d.required&&relevant(d,s))state.selected.add(d.id);if(!d.required||!relevant(d,s))state.selected.delete(d.id)});renderOutput()}
+function renderOutput(){const s=situation();const visible=docs.filter(d=>relevant(d,s));const output=$('output');output.innerHTML='';[...new Set(visible.map(d=>d.cat))].forEach(cat=>{const sec=document.createElement('section');sec.className='doc-section';const items=visible.filter(d=>d.cat===cat).map(d=>`<li class="${(d.required&&!d.alternative)?'mandatory':''}${d.alternative?' alt':''}"><label class="doc-row"><input class="doc-check" type="checkbox" data-id="${d.id}" ${state.selected.has(d.id)?'checked':''}><span class="doc-label">${d.label}</span></label></li>`).join('');sec.innerHTML=`<h2>${cat}</h2><ul class="doc-list">${items}</ul>`;output.appendChild(sec)});output.querySelectorAll('.doc-check').forEach(i=>i.addEventListener('change',()=>{i.checked?state.selected.add(i.dataset.id):state.selected.delete(i.dataset.id)}))}
+['clientType','dcc2','companyType','nationality','income','housing','contribution'].forEach(id=>$(id).addEventListener('change',applyRules));
+$('resetBtn').addEventListener('click',()=>{$('clientType').value='private';$('dcc2').value='no';$('companyType').value='company';$('nationality').value='fr';$('income').value='employee';$('housing').value='tenant';$('contribution').value='under';state.selected.clear();applyRules()});
+function preparePrintState(){
+  document.querySelectorAll('.doc-section').forEach(sec=>{
+    let checkedCount=0;
+    sec.querySelectorAll('.doc-list li').forEach(li=>{
+      const cb=li.querySelector('.doc-check');
+      const selected=!!(cb&&cb.checked);
+      li.classList.toggle('print-selected',selected);
+      if(selected) checkedCount++;
+    });
+    sec.classList.toggle('print-empty',checkedCount===0);
+  });
+}
+function clearPrintState(){
+  document.querySelectorAll('.print-selected').forEach(el=>el.classList.remove('print-selected'));
+  document.querySelectorAll('.print-empty').forEach(el=>el.classList.remove('print-empty'));
+}
+function prepareAndPrint(){
+  preparePrintState();
+  window.setTimeout(()=>window.print(),30);
+}
+window.addEventListener('beforeprint',preparePrintState);
+window.addEventListener('afterprint',clearPrintState);
+applyRules();
+</script>
+</body></html>
